@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CST Buddy</title>
+    
+
+    <!-- Bootstrap for Mobile-first, and JQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Firebase CSS for Authentication UI -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+    
+    <link rel="stylesheet" href="styles/learnmore.css">
+
+</head>
+
+<body>
+    <!-------------------------------------->
+    <!-- The following is HTML for layout -->
+    <!-------------------------------------->
+    <!-- Header Navigation Bar -->
+
+    <div class="banner">
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="holder">
+                <p id="Title">Learn How To Get Started</p>
+                <p id="p1">CST buddy is a fast and effcient way to receive the latest information on all your BCIT related queries.
+                </p>
+                <p id="p1">The article below will explain more about our key functions!</p>
+                <br>
+                <br>
+                <div id="button-holder">
+                    <a class="btn1 btn-primary btn-lg" href="index.html" role="button">Return Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-holder">
+        <div>
+            <div class="container1">
+                <div id="headline">
+                    <div>
+                        <br>
+                        <br>
+                        <p id="head1">Content</p>
+                        <p id="p2">
+                            To get started as a new user, be sure to create a new account
+                            on the login page. 
+                        </p>
+                        <p id="p2">
+                             The article below explains more about the application!
+                        </p>
+                    </div>
+                </div>
+                <div id="cardholders">
+                    <div id="card1">
+                        <div class="card" style="width: 18rem;">
+                            <div class="img-adjust">
+                                <img class="card-img-top"
+                                    src="images/thumbsup.svg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <p class="cardtext"></p>
+                                <p class="card-text">Following the users query, we implemented a like counter that will
+                                    allow users to give feedback whether we have satisfied them or not.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card1">
+                        <div class="card" style="width: 18rem;">
+                            <div class="img-adjust">
+                                <img class="card-img-top"
+                                    src="images/chatbubble.svg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <p class="cardtext"></p>
+                                <p class="card-text">The chatbot allows user users to ask questions about any BCIT related
+                                    content. Users are able to input their queries in the text field.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card1">
+                        <div class="card" style="width: 18rem;">
+                            <div class="img-adjust">
+                                <img class="card-img-top"
+                                    src="images/search.svg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <p class="cardtext"></p>
+                                <p class="card-text">To personalize the chatbot, we made it so that contents are tailored to our users by 
+                                    "Most Liked" and "Top Searches".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container2">
+                <div id="box">
+                    <div id="box1">
+                        <div>
+                            <p id="p4">In order to get started today,</p>
+                            <p id="p4">Be sure to sign up with us!</p>
+                        </div>
+                    </div>
+                    <div id="box2">
+                        <a class="btn2 btn-primary btn-lg" href="mainpage.html" role="button">Sign Up Here</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- where the login widget / component is going to sit -->
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+
+    <!----------------------------------------------->
+    <!-- JS: Boostrap, Firebase, API related    -->
+    <!----------------------------------------------->
+
+    <!-- Copied from firebase documentation -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
+    <!-- these 2 line aren for Auth UI library and CSS-->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+
+    <!-- Firebase API key information -->
+
+    <script src="scripts/firebase_api.js"></script>
+
+</body>
+
+</html>

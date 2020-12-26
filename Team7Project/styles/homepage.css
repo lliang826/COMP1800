@@ -1,0 +1,341 @@
+#collapse {
+    margin: auto;
+    width: 50%;
+}
+
+#collapse .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#collapseExample {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#logo-div {
+    background-color: #87aeb4;
+    height: 160px;
+    display: grid;
+    grid-template-columns: 300px 69% 1%;
+}
+
+#logo {
+    width: 160px;
+    height: 160px;
+    border: 0;
+}
+
+#welcome {
+    font-size: 3.6em;
+    height: 220px;
+    color: white;
+    margin-top: 50px;
+    font-family: 'Crimson Text', serif;
+}
+
+#welcomeSmallScreen {
+    display: none;
+    font-size: 3em;
+    height: 220px;
+    color: black;
+    margin-top: 50px;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+}
+
+#education {
+    height: 160px;
+}
+
+#chatbot-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 70px;
+}
+
+body {
+    font: 15px arial, sans-serif;
+    background-color: white;
+    /*padding-top: 15px; */
+    padding-bottom: 15px;
+}
+
+.btn {
+    background-color: #153e5c;
+    margin-left: 5px;
+    border-color: #153e5c;
+}
+
+.btn:hover {
+    background-color: #f2be54;
+}
+
+#bodybox {
+    margin: auto;
+    width: 50vw;
+    font: 20px 'Crimson Text', sans-serif;
+    font-weight: 600;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 15px;
+    background-color: #153e5c;
+}
+
+#chatborder {
+    border-style: solid;
+    background-color: #f6f9f6;
+    border-width: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 15px;
+    border-radius: 15px;
+    overflow: auto;
+    height: 400px;
+}
+
+.chatlog {
+    font: 17px arial, sans-serif;
+    font-style: italic;
+}
+
+#chatbox {
+    font: 20px 'arial', sans-serif;
+    height: 30px;
+    width: 100%;
+}
+
+h1 {
+    margin: auto;
+}
+
+pre {
+    background-color: #f0f0f0;
+    margin-left: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#MostLikedLinks {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1800px) {
+    #logo-div {
+        grid-template-columns: 20% 63% 1%;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    #logo-div {
+        grid-template-columns: 20% 61.6% 1%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #logo-div {
+        grid-template-columns: 20% 60% 1%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #logo-div {
+        grid-template-columns: 24% 52% 1%;
+    }
+
+    #welcome {
+        font-size: 3em;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #logo-div {
+        grid-template-columns: 20% 52% 1%;
+    }
+
+    #welcome {
+        font-size: 2.5em;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #logo { grid-area: logo; }
+    #welcome { grid-area: welcome; }
+    #education { grid-area: education; }
+
+    #welcomeSmallScreen {
+        display: block;
+        font-size: 2.2em;
+        width: 90%;
+        height: 0px;
+        margin: auto;
+    }
+
+    #welcome {
+        display: none;
+    }
+    
+    #logo-div {
+        display: grid;
+        grid-template-areas:
+        'logo . education'
+        'welcome welcome welcome';
+
+        background-color: #fef200;
+        grid-template-columns: 20% 42% 1%;
+    }
+
+    #welcome {
+        font-size: 2.5em;
+        margin-top: 50px;
+        color: black;
+        text-align: center;
+    }
+
+    #bodybox {
+        margin-top: 130px;
+        width: 450px;
+    }
+    
+    #chatborder {
+        width: 400px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #welcomeSmallScreen {
+        display: block;
+        font-size: 2.2em;
+        width: 90%;
+        height: 0px;
+        margin: auto;
+    }
+
+    #welcome {
+        display: none;
+    }
+
+    #logo-div {
+        grid-template-columns: 20% 32% 1%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #welcomeSmallScreen {
+        display: block;
+        font-size: 2.2em;
+        width: 90%;
+        height: 0px;
+        margin: auto;
+    }
+
+    #welcome {
+        display: none;
+    }
+
+    #bodybox {
+        width: 450px;
+    }
+
+    #logo-div {
+        grid-template-columns: 20% 22% 1%;
+        width: 100%;
+    }
+
+    #welcome {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    #logo-div p {
+        text-align: center;
+    }
+
+    #collapse {
+        margin-left: 0;
+    }
+
+    #collapse .btn {
+        margin-left: 50%;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #collapseExample {
+        width: 100vw;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #welcomeSmallScreen {
+        display: block;
+        font-size: 2.2em;
+        width: 90%;
+        height: 0px;
+        margin: auto;
+    }
+
+    #education {
+        display: none;
+    }
+
+    #logo-div {
+        grid-template-columns: 20% 80%;
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    #logo-div p {
+        text-align: center;
+    }
+
+    #bodybox {
+        width: 90%;
+    }
+
+    #chatborder {
+        width: 100%;
+    }
+
+    #collapse {
+        margin-left: 0;
+    }
+
+    #collapse .btn {
+        margin-left: 50%;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #collapseExample {
+        width: 100vw;
+        margin-left: 0;
+    }
+}
